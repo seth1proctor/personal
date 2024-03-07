@@ -23,41 +23,32 @@
 </head>
 
 <body>
+
     <header>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="./projects.html">Projects</a></li>
             </ul>
         </nav>
     </header>
 
+    <container id="imageContainer">
+        <section id="background">
+            <div class="profileImg">
+                <img src="./images/profilePic.JPG" alt="Profile Photo" class="profilePic">
+                <div><h1>Hi, I am Seth</h1></div>
+               <div id="typing-text" class="typing-text" data-text="Computer Engineering Iowa State University"></div>
+            </div>
+        </section>
+    </container>
+
+
     <section id="about">
         <div class="container">
-            <img src="profilePic.JPG" alt="Profile Photo">
-            <h1>Seth Proctor</h1>
-            <p style="font-family: 'Courier New', Courier, monospace; color: brown">Computer Engineer</p>
-            <p> I am a dedicated Computer Engineer currently pursuing my academic journey at Iowa State University.
-                My fascination with the ever-evolving world of technology has driven me to explore and contribute to
-                various aspects of computer engineering.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <img src="html_css.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>The first project is related to develop a single Web page using
-                    only two technologies: HTML and CSS. The project consists in
-                    creating a single web page with a menu at the top know as
-                    Navigation Bar. We have to include text describing ourself and
-                    text describing the project. Additionally, we need to include
-                    two images: one image is of ourself and second image is anything
-                    related to the project itself.</p>
-            </div>
+            <h2>About Me</h2>
+            <p class="bio">I'm Seth Proctor, a tech enthusiast passionate about crafting intuitive user experiences and exploring the forefront of innovation. My experience spans a wide array of coding languages including Java, JavaScript, HTML, CSS, Python, and C. Within this website, I've made significant contributions to both the expenses page and the edit budget screen, where my meticulous attention to detail and dedication to excellence shine through. My interests lie particularly in front-end development and embedded systems, where I blend technical expertise with creative flair to deliver seamless solutions. Always eager to embrace new technologies, I thrive on the challenge of staying ahead of the curve and pushing the boundaries of what's possible in the digital world. Join me on this journey as I continue to shape the future of web development and explore the endless possibilities of technology.</p>
+           
         </div>
     </section>
 
@@ -67,11 +58,15 @@
             <p>You can reach me at sethproc@iastate.edu</p>
         </div>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Seth Proctor</p>
+    <footer class="footer">
+        <div class="foot">
+            <p> &copy; 2024 Seth Proctor
+                <a href="https://github.com/seth1proctor" class="text-white"> @Seth1Proctor</a>.
+            </p>
+        </div>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 
 </html>

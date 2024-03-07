@@ -1,8 +1,4 @@
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
+
 
 nav ul {
     list-style: none;
@@ -19,14 +15,90 @@ nav a {
     color: #fff;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 img {
     width: 200px;
+}
+
+
+
+.project p {
+    line-height: 1.5;
+    /* Adjust the value as needed */
+}
+
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+    /* Center align the content */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 2px solid #ddd; /* Add a border around each project */
+    border-radius: 5px; /* Add rounded corners to the border */
+    padding: 20px;
+}
+
+.profilePic {
+    width: 150px;
+    /* Set the width of the image */
+    height: 150px;
+    /* Set the height of the image */
+    border-radius: 50%;
+    /* Make the image circular */
+    border: 3px solid #FFF;
+    /* Add a border around the image */
+    display: block;
+    /* Make the image a block element to center it */
+}
+
+.profileImg{
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text horizontally */
+    margin-bottom: 350px; /* Adjust as needed */
+    font-family: cursive;
+}
+
+
+
+#background {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff; /* Fallback background color in case the image doesn't load */
+    background-image: url('./images/bg4.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Fixes the background image while scrolling */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    color: white; /* Setting text color to white so it's visible against the background */
+    height: 100vh; /* Set the height of the section to 100% of the viewport height */
+    display: flex; /* Use flexbox to center content vertically */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Position at the top of the viewport */
+    width: 100%; /* Take the full width of the viewport */
+    z-index: 999; /* Ensure the header is on top of other content */
+}
+
+header p{
+    padding: 10px 0;
+
 }
 
 footer {
@@ -34,4 +106,53 @@ footer {
     padding: 10px;
     background-color: #333;
     color: #fff;
+    position: fixed; /* Fixed positioning */
+    bottom: 0; /* Position at the bottom of the viewport */
+    width: 100%; /* Take the full width of the viewport */
+    z-index: 999; /* Ensure the footer is on top of other content */
 }
+
+/* Adjust the padding of the body to make space for the fixed header and footer */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 50px; /* Adjust according to the height of your header */
+    padding-bottom: 50px; /* Adjust according to the height of your footer */
+}
+
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes waiting {
+    0% { width: 100%; }
+    50% { width: 100%; }
+    to { width: 100%; }
+}
+
+.typing-text {
+    margin-top: 20px;
+    text-align: center;
+    font-family: cursive;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    width: 0;
+    animation: typing 6s steps(500,end), waiting 3s steps(500,end) 6s infinite;
+}
+.container p{
+    font-family: cursive;
+    line-height: 1.5;
+}
+
+.container h2{
+    font-family: cursive;
+}
+
+.footer a {
+    color: blue; /* Change link color to blue */
+}
+
